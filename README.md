@@ -28,7 +28,7 @@ fastboot boot boot-raphael.img
 
 1. **Fork** this repository to your own GitHub account.
 2. Go to **Actions → “build-raphael”** and click **Run workflow**.
-   - The workflow does everything: on a free `macos-14` runner it builds the SM8150 XNU 8796 kernel the same public way `guacamole` does (`dipa-studio/ios-sweet` → `blacktop/darwin-xnu-build`, `MACHINE_CONFIG=SWEET`); then on `ubuntu-latest` it checks out the UniXNU driver and Project Aloha UEFI, fetches the raphael/SM8150 device tree, automatically extracts the iPhone X (`D22AP`) base Apple Device Tree from the public IPSW, builds the UEFI firmware volume, packs the FAT payload, and produces the boot image.
+   - The workflow does everything: on a free `macos-15` runner it builds the SM8150 XNU 8796 kernel the same public way `guacamole` does (`dipa-studio/ios-sweet` → `blacktop/darwin-xnu-build`, `MACHINE_CONFIG=SWEET`); then on `ubuntu-latest` it checks out the UniXNU driver and Project Aloha UEFI, fetches the raphael/SM8150 device tree, automatically extracts the iPhone X (`D22AP`) base Apple Device Tree from the public IPSW, builds the UEFI firmware volume, packs the FAT payload, and produces the boot image.
 3. When it finishes, download the **`boot-raphael.img`** artifact.
 
 That's it. Every input the build needs is either in this repo or fetched from a **public** source — there is no private kernel defconfig and no manual IPSW work.
