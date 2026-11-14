@@ -8,7 +8,7 @@ name: build-raphael
 # tree and the Apple Device Tree (ADT) profile (1080x2340 panel).
 #
 # Two jobs:
-#   1. kernel  (macos-14): builds the SM8150 XNU 8796 kernel the SAME public way
+#   1. kernel  (macos-15): builds the SM8150 XNU 8796 kernel the SAME public way
 #      guacamole does -- via dipa-studio/ios-sweet + blacktop/darwin-xnu-build
 #      (MACHINE_CONFIG=SWEET). This is fully public; NO private defconfig needed.
 #   2. build   (ubuntu-latest): builds the Aloha UEFI firmware volume, packs the
